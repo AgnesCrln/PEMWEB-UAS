@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team - Event Organizer</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+      <div id="navbar"></div>
+
+    <!-- Our Team Section -->
+    <section class="py-5 my-5">
+    <div class="container">
+        <h2 class="text-center custom-heading fw-bold mb-4">Meet Our Amazing Team</h2>
+        <div class="slogan text-center mb-4">"Di balik acara yang sempurna, ada tim yang luar biasa."</div>
+        <div class="row justify-content-center g-4">
+        <div class="col-12 col-sm-6 col-md-3 d-flex justify-content-center">
+        <div class="card shadow-sm text-center h-100">
+        <img alt="" class="card-img-top" src="images/agnes.jpg"/>
+        <div class="card-body">
+            <h5 class="card-title">Agnes Carolina</h5>
+            <p class="card-text">Event Designer</p>
+            <div class="social-icons">
+            <a aria-label="Agnes Carolina Twitter" href="#"><i class="bi bi-envelope-fill"></i></a>
+            <a aria-label="Agnes Carolina LinkedIn" href="#"><i class="bi bi-linkedin"></i></a>
+            <a aria-label="Agnes Carolina Instagram" href="https://www.instagram.com/gnscrln"><i class="bi bi-instagram"></i></a>
+            </div>
+        </div>
+        </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 d-flex justify-content-center">
+        <div class="card shadow-sm text-center h-100">
+        <img alt="" class="card-img-top" src="images/Fidia.jpg"/>
+        <div class="card-body">
+            <h5 class="card-title">Fidia Adella</h5>
+            <p class="card-text">Event Coordinator</p>
+            <div class="social-icons">
+            <a aria-label="Fidia Adella Twitter" href="#"><i class="bi bi-envelope-fill"></i></a>
+            <a aria-label="Fidia Adella LinkedIn" href="#"><i class="bi bi-linkedin"></i></a>
+            <a aria-label="Fidia Adella Instagram" href="#"><i class="bi bi-instagram"></i></a>
+            </div>
+        </div>
+        </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 d-flex justify-content-center">
+        <div class="card shadow-sm text-center h-100">
+        <img alt="Portrait of Sri Soepadmi, a woman with short black hair wearing a blazer and smiling" class="card-img-top" src="images/riri.jpg"/>
+        <div class="card-body">
+            <h5 class="card-title">Sri Soepadmi</h5>
+            <p class="card-text">Event Planner</p>
+            <div class="social-icons">
+            <a aria-label="Sri Soepadmi Twitter" href="#"><i class="bi bi-envelope-fill"></i></a>
+            <a aria-label="Sri Soepadmi LinkedIn" href="#"><i class="bi bi-linkedin"></i></a>
+            <a aria-label="Sri Soepadmi Instagram" href="#"><i class="bi bi-instagram"></i></a>
+            </div>
+        </div>
+        </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 d-flex justify-content-center">
+        <div class="card shadow-sm text-center h-100">
+        <img alt="Portrait of Muhammad Faiz Athallah, a man with short hair and beard wearing a suit and smiling" class="card-img-top" src="images/faiz.jpg"/>
+        <div class="card-body">
+            <h5 class="card-title">Muhammad Faiz Athallah</h5>
+            <p class="card-text">Event Manager</p>
+            <div class="social-icons">
+            <a aria-label="Faiz Twitter" href="#"><i class="bi bi-envelope-fill"></i></a>
+            <a aria-label="Faiz LinkedIn" href="#"><i class="bi bi-linkedin"></i></a>
+            <a aria-label="Faiz Instagram" href="#"><i class="bi bi-instagram"></i></a>
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Footer -->
+     <div id="footer"></div>
+
+      <script>
+        fetch('Navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar').innerHTML = data;
+            });
+        
+        fetch('Footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+      </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
